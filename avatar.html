@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar</title>
+    <link rel="stylesheet" href="assets/css/avatar.css" />
+    <link rel="icon" href="assets/svg/logo.svg" type="image/svg" />
+  </head>
+  <body>
+    <main class="front">
+      <div class="header">
+        <div class="logo grid">
+          <img src="assets/svg/logo.svg" alt="logo" />
+          <div class="txt">
+            <h5>Amore</h5>
+            <img src="assets/svg/line.svg" alt="line" />
+          </div>
+        </div>
+      </div>
+      <div class="image_main grid">
+        <form class="container grid">
+          <div class="color"></div>
+          <div class="heading_image form_image flex avatar">
+            <div class="headtxt">
+              <h1>Profile Image</h1>
+              <h3>Upload an image or pick an avatar</h3>
+            </div>
+            <div class="avatar-default image-holder">
+              <img
+                src="assets/svg/avatar/avatar-boy.svg"
+                alt="Default Avatar"
+                class="uploadimg"
+              />
+              <label for="avatar-upload" class="float">
+                <img src="assets/svg/profilecam.svg" alt="Upload Avatar" />
+                <input type="file" id="avatar-upload" accept="image/*" />
+              </label>
+            </div>
+          </div>
+          <div class="form_image flex">
+            <h2>Avatar</h2>
+            <div class="inputs grid avatar-options">
+              <!-- The generated options will be inserted here -->
+            </div>
+            <div class="progress flex">
+              <img
+                src="assets/svg/arrow-line-right.svg"
+                alt="arrow"
+                onclick="goToHome()"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/avatar.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: Segoe Print;
+  src: url("assets/fonts/segoe-print/segoepr.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: linear-gradient(
+    270deg,
+    #ff5871 0%,
+    #ff657c 30.7%,
+    #ff6c82 60.03%,
+    #ff7e91 103.2%
+  );
+  font-family: "Poppins", "Segoe Print", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.front {
+  margin: 0;
+  padding: 0;
+}
+
+.front .header {
+  position: absolute;
+  padding: 1.5rem 4rem;
+  z-index: 999;
+}
+.front .header .logo {
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+}
+.front .header .logo img {
+  width: 1.8rem;
+}
+.front .header .logo .txt {
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 100%;
+  font-family: "Segoe Print";
+}
+.front .header .logo .txt img {
+  position: absolute;
+  width: 5rem;
+}
+
+.login_main {
+  place-items: center center;
+  place-content: center center;
+  height: 100vh;
+  overflow: hidden;
+}
+.login_bg {
+  position: fixed;
+  width: 25rem;
+  right: 0;
+  bottom: 0;
+}
+.form_login-error {
+  position: absolute;
+  bottom: -2rem;
+}
+
+.login_main .container {
+  width: 60rem;
+  height: 30rem;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 1.8rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  position: relative;
+}
+.login_color {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  background: #fdeef4;
+  border-top-left-radius: 1.5625rem;
+  border-bottom-left-radius: 1.5625rem;
+}
+.login_main .heading_login {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 0;
+  background: none;
+  z-index: 999;
+}
+.login_main .heading_login img {
+  width: 80%;
+}
+
+.login_main .heading_login h1 {
+  color: #df1463;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.login_main .heading_login h3 {
+  color: #22172a;
+  text-align: center;
+  font-family: Segoe Print;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.login_main .form_login {
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 1rem;
+  position: relative;
+}
+.login__terms:hover {
+  font-weight: 700;
+}
+.login__terms {
+  font-family: "Poppins";
+  font-size: 0.7rem;
+  color: #df1463;
+  top: 14.8rem;
+  position: absolute;
+  left: 5rem;
+  cursor: pointer;
+}
+.login__terms span {
+  font-weight: 700;
+}
+.login_main .form_login h2 {
+  color: #df1463;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.login_main .form_login .inputs {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+  height: -webkit-fill-available;
+}
+input {
+  outline: none;
+  border: none;
+  width: 20rem;
+  font-size: 1rem;
+  font-family: "Poppins";
+  line-height: 100%;
+  text-indent: 1rem;
+  border-radius: 0.3rem;
+  border-bottom: 1.5px solid #df1463;
+  margin-bottom: -1.5px;
+  background: rgba(255, 122, 141, 0.05);
+  padding: 10px 30px;
+  z-index: 99999;
+
+  /* Drop Shadow */
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+input::placeholder {
+  opacity: 0.45;
+  color: #df1463;
+}
+label input:focus {
+  background-color: #df146210;
+}
+label {
+  position: relative;
+}
+.login_main .form_login .inputs .user::before,
+.login_main .form_login .inputs .pass::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  bottom: 0;
+  width: 20px;
+  background-repeat: no-repeat;
+}
+.login_main .form_login .inputs .user::before {
+  background-image: url("../svg/user.svg");
+}
+.login_main .form_login .inputs .pass::before {
+  background-image: url("../svg/lock.svg");
+}
+
+input:focus {
+  border-bottom: 2px solid #df1463;
+  margin-bottom: -2px;
+  background: rgba(255, 122, 141, 0.05);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.login_main .form_login button {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Poppins";
+  line-height: 150%;
+  padding: 0.5rem 2rem;
+  border-radius: 2.5rem;
+  color: #fff;
+  background: #df1463;
+  cursor: pointer;
+  width: max-content;
+  margin-top: 3.8rem;
+  align-self: center;
+}
+
+.login_main .form_login button:hover {
+  background: none;
+  color: #df1463;
+  outline: 2px solid #df1463;
+  font-weight: 600;
+}
+
+.login_main .form_login .inputs .login {
+  flex-direction: rows;
+  gap: 0.5rem;
+}
+
+.login--h5 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.login--h5 h5 {
+  font-size: 0.66rem;
+  color: #df1463;
+  font-weight: 500;
+}
+
+.goToLogin:hover {
+  font-weight: 700;
+  cursor: pointer;
+}

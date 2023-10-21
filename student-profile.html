@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudentProfile</title>
+    <link rel="stylesheet" href="assets/css/studentprofile.css" />
+    <link rel="icon" href="assets/svg/logo.svg" type="image/svg" />
+  </head>
+  <body>
+    <main class="front">
+      <div class="header">
+        <div class="logo grid">
+          <img src="assets/svg/logo.svg" alt="logo" />
+          <div class="txt">
+            <h5>Amore</h5>
+            <img src="assets/svg/line.svg" alt="line" />
+          </div>
+        </div>
+      </div>
+      <div class="student flex">
+        <div class="student_color"></div>
+        <div class="student_intro flex">
+          <h1>Student Profile</h1>
+          <h3>
+            You can choose to keep your data a secret on the profile settings
+          </h3>
+          <img src="assets/svg/student.svg" alt="profile" />
+        </div>
+        <div class="student_container flex">
+          <form class="student_form">
+            <h3>Student Data</h3>
+            <div class="student_divform flex">
+              <div class="student_detail flex">
+                <label class="student_name" htmlFor="name">
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                    required="{true}"
+                    placeholder="Lastname, Firstname M.I."
+                    value=""
+                  />
+                </label>
+                <label class="student_id" htmlFor="student_id">
+                  <input
+                    id="student_id"
+                    type="text"
+                    name="student_id"
+                    required
+                    placeholder="I.D. Number"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div class="col1 flex">
+                <label class="student_bday" htmlFor="student_bday">
+                  <input type="date" id="student_bday" name="student_bday" />
+                </label>
+                <label class="student_gender" htmlFor="student_gender">
+                  <select id="student_gender" name="student_gender">
+                    <option selected disabled hidden>Select Gender</option>
+                  </select>
+                </label>
+              </div>
+              <label class="student_dept" htmlFor="student_dept">
+                <select id="student_dept" name="student_dept">
+                  <option selected disabled hidden>Select Department</option>
+                </select>
+              </label>
+              <label class="student_course" htmlFor="student_course">
+                <select id="student_course" name="student_course">
+                  <option selected disabled hidden>Select Course</option>
+                </select>
+              </label>
+              <label class="student_major" htmlFor="student_major">
+                <select id="student_major" name="student_major">
+                  <option selected disabled hidden>Select Major</option>
+                </select>
+                <button
+                  type="submit"
+                  class="student_submit"
+                  onclick="goToInterest()"
+                >
+                  Submit
+                </button>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/data.js" type="module"></script>
+    <script src="assets/js/map.js" type="module"></script>
+  </body>
+</html>

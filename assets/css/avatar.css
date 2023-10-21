@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: Segoe Print;
+  src: url("assets/fonts/segoe-print/segoepr.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: linear-gradient(
+    270deg,
+    #ff5871 0%,
+    #ff657c 30.7%,
+    #ff6c82 60.03%,
+    #ff7e91 103.2%
+  );
+  font-family: "Poppins", "Segoe Print", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.front {
+  margin: 0;
+  padding: 0;
+}
+
+.front .header {
+  position: absolute;
+  padding: 1.5rem 4rem;
+  z-index: 999;
+}
+.front .header .logo {
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem;
+}
+.front .header .logo img {
+  width: 1.8rem;
+}
+.front .header .logo .txt {
+  font-size: 1.8rem;
+  color: #fff;
+  line-height: 100%;
+  font-family: "Segoe Print";
+}
+.front .header .logo .txt img {
+  position: absolute;
+  width: 5rem;
+}
+
+.image_main {
+  place-items: center center;
+  place-content: center center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image_main .container {
+  width: 60rem;
+  height: 30rem;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 1.5625rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  position: relative;
+}
+
+.color {
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  background: #fdeef4;
+  border-top-left-radius: 1.5625rem;
+  border-bottom-left-radius: 1.5625rem;
+}
+
+.image_main .heading_image {
+  z-index: 9999;
+  flex-direction: column;
+  justify-content: start;
+  align-content: start;
+  justify-items: center;
+  align-items: center;
+  background: #fdeef4;
+  border-top-left-radius: 1.5625rem;
+  border-bottom-left-radius: 1.5625rem;
+  padding: 2rem 0;
+  gap: 0rem;
+}
+
+.float input {
+  display: none;
+}
+
+.avatar-default {
+  position: relative;
+}
+.image_main .heading_image .uploadimg {
+  width: 19rem;
+  height: 19rem;
+  border-radius: 50%;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.25);
+}
+.image_main .heading_image .float {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.image_main .heading_image .headtxt {
+  z-index: 999;
+}
+
+.image_main .heading_image h1 {
+  color: #df1463;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.image_main .heading_image h3 {
+  color: #22172a;
+  text-align: center;
+  font-family: Segoe Print;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.image_main .form_image {
+  flex-direction: column;
+  padding: 2rem 0;
+  gap: 0.9rem;
+}
+
+.image_main .form_image .inputs {
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center center;
+  height: 20rem;
+  width: 100%;
+  height: 18rem;
+  padding: 2rem 1.5rem;
+  row-gap: 1rem;
+  overflow-y: scroll;
+}
+
+.image_main .form_image .inputs img {
+  width: 7rem;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.image_main .form_image .inputs img:hover {
+  transform: scale(1.1);
+}
+
+.image_main .form_image h2 {
+  color: #df1463;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.image_main .form_image .progress {
+  flex-direction: column;
+  padding: 0 3rem;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.image_main .form_image .progress {
+  margin-left: auto;
+}
+.image_main .form_image .progress img {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* -------------------------------- */
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.float input {
+  display: none;
+}
+
+.avatar-default label:hover {
+  transform: scale(1.1);
+}
+
+.avatar-option input[type="radio"] {
+  display: none;
+}
+
+.avatar-option label {
+  display: block;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.avatar-option label:hover {
+  border-color: #df1463;
+}
+
+.avatar-option input[type="radio"]:checked + label {
+  border-color: #df1463;
+}
+
+.avatar--selected {
+  border-color: #df1463;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #df14628a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

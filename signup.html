@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="assets/css/signup.css" />
+    <link rel="icon" href="assets/svg/logo.svg" type="image/svg" />
+  </head>
+  <body>
+    <main class="front">
+      <div class="header">
+        <div class="logo grid">
+          <img src="assets/svg/logo.svg" alt="logo" />
+          <div class="txt">
+            <h5>Amore</h5>
+            <img src="assets/svg/line.svg" alt="line" />
+          </div>
+        </div>
+      </div>
+      <div class="signup_main grid">
+        <img src="assets/svg/bg.svg" alt="bg" class="signup_bg" />
+        <div class="container grid">
+          <div class="signup_color"></div>
+          <div class="heading_signup flex">
+            <div>
+              <h1>Create Account</h1>
+              <h3>Find the match that fits you</h3>
+            </div>
+            <img src="assets/svg/couple.svg" alt="couple" />
+          </div>
+          <form class="form_signup flex">
+            <h2>SIGN UP</h2>
+            <div class="inputs flex">
+              <label class="user">
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  required
+                  value=""
+                />
+              </label>
+              <label class="pass">
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]{8,}$"
+                  title="Password must be at least 8 characters long and include
+                at least one uppercase letter, one lowercase letter, one number,
+                and one special character (@, #, $, %, ^, &, *, or !)"
+                  required
+                  value=""
+                />
+              </label>
+              <label class="confirm pass">
+                <input
+                  id="confirmpassword"
+                  type="password"
+                  name="confirmpassword"
+                  placeholder="Confirm Password"
+                  required
+                  value=""
+                />
+              </label>
+            </div>
+            <p class="signup__terms">
+              By signing you agree to our <span>Terms and Conditions</span>
+            </p>
+            <button type="submit" onclick="goToStudentProfile()">
+              Sign Up
+            </button>
+            <div class="signup--h5">
+              <h5>Already a member?</h5>
+              <h5 onclick="goToLogin()" class="goToLogin">Login</h5>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

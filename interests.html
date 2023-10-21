@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest</title>
+    <link rel="stylesheet" href="assets/css/interests.css" />
+    <link rel="icon" href="assets/svg/logo.svg" type="image/svg" />
+  </head>
+  <body>
+    <main class="front">
+      <div class="header">
+        <div class="logo grid">
+          <img src="assets/svg/logo.svg" alt="logo" />
+          <div class="txt">
+            <h5>Amore</h5>
+            <img src="assets/svg/line.svg" alt="line" />
+          </div>
+        </div>
+      </div>
+      <div class="interest_main grid">
+        <div class="container grid">
+          <div class="color"></div>
+          <div class="heading_interest flex">
+            <div class="headtxt">
+              <h1>Profile</h1>
+              <h3>Set up your basic profile information</h3>
+            </div>
+            <img src="assets/svg/setprofile.svg" alt="student" />
+          </div>
+          <form class="form_interest flex">
+            <div class="interesttxt flex">
+              <h2>Interest</h2>
+            </div>
+            <div class="inputs flex"></div>
+            <div class="progress flex">
+              <div class="progress-status flex">
+                <div class="left"></div>
+                <div class="right">
+                  <img
+                    src="assets/svg/arrow-line-right.svg"
+                    alt="arrow"
+                    onclick="goToAvatar()"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/data.js" type="module"></script>
+    <script src="assets/js/interest.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="icon" href="assets/svg/logo.svg" type="image/svg" />
+  </head>
+  <body>
+    <main class="front">
+      <div class="header">
+        <div class="logo grid">
+          <img src="assets/svg/logo.svg" alt="logo" />
+          <div class="txt">
+            <h5>Amore</h5>
+            <img src="assets/svg/line.svg" alt="line" />
+          </div>
+        </div>
+      </div>
+      <div class="login_main grid">
+        <img src="assets/svg/bg.svg" alt="bg" class="login_bg" />
+        <div class="container grid">
+          <div class="login_color"></div>
+          <div class="heading_login flex">
+            <h1>Welcome Back!</h1>
+            <h3>PHINMA UPang Student</h3>
+          </div>
+          <form class="form_login flex">
+            <h2>SIGN IN</h2>
+            <div class="inputs flex">
+              <label class="user">
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  autocomplete="true"
+                  required
+                  value=""
+                />
+              </label>
+              <label class="pass">
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  required
+                  value=""
+                />
+              </label>
+            </div>
+            <p class="login__terms">Forgot Password?</p>
+            <button type="submit" value="Sign In" onclick="goToHome()">
+              Sign In
+            </button>
+            <div class="login--h5">
+              <h5>Not a member?</h5>
+              <h5 onclick="goToSignUp()" class="goToLogin">Signup</h5>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
